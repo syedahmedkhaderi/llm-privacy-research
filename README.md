@@ -1,6 +1,17 @@
-# llm-privacy-research
-Research on Privacy Leakage in LLMs using PETs
+# Privacy Leakage in LLMs using PETs
+Research project investigating privacy leakage in Large Language Models and mitigation using Privacy Enhancing Technologies.
 
+## Project Overview
+This research explores how Large Language Models can accidentally leak sensitive training data and how Privacy Enhancing Technologies (PETs) like Differential Privacy can prevent this.
+
+## Research Questions
+1. How do LLMs memorize and leak sensitive information?
+2. Can Privacy Enhancing Technologies effectively prevent leakage?
+3. What is the trade-off between privacy and model performance?
+
+
+## Project Structure
+```
 llm-privacy-research/
 ├── data/                    # All datasets
 │   ├── raw/                 # Original, untouched data
@@ -22,3 +33,46 @@ llm-privacy-research/
 ├── README.md                # Project overview
 ├── requirements.txt         # List of Python libraries needed
 └── .gitignore               # Files Git should ignore
+```
+
+# Privacy Leakage in LLMs using PETs
+
+Research project investigating privacy leakage in Large Language Models and mitigation using Privacy Enhancing Technologies.
+
+## Project Overview
+This research explores how Large Language Models can accidentally leak sensitive training data and how Privacy Enhancing Technologies (PETs) like Differential Privacy can prevent this.
+
+## Research Questions
+1. How do LLMs memorize and leak sensitive information?
+2. Can Privacy Enhancing Technologies effectively prevent leakage?
+3. What is the trade-off between privacy and model performance?
+
+
+## Setup
+```bash
+# Clone repository
+git clone https://github.com/syedahmedkhaderi/llm-privacy-research.git
+cd llm-privacy-research
+
+# Create virtual environment
+python -m venv venv
+source venv/bin/activate  # On Windows: venv\Scripts\activate
+
+# Install dependencies
+pip install -r requirements.txt
+```
+
+## Progress
+- [x] Environment setup
+- [ ] Literature review
+- [ ] Baseline experiments
+- [ ] PET implementation
+- [ ] Results analysis
+
+## Advisors
+- Dr. Lamia Makhlouf
+- Dr. Karima Makhlouf
+
+## Contact
+Syed Ahmed Khaderi
+syedahmedkhaderi@gmail.com
