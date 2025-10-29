@@ -1,0 +1,27 @@
+# Core ML and Deep Learning
+torch==2.1.0
+transformers==4.35.0
+datasets==2.14.0
+
+# Privacy libraries
+opacus==1.4.0
+
+# Data processing
+numpy==1.24.3
+pandas==2.0.3
+scipy==1.11.3
+
+# Visualization
+matplotlib==3.8.0
+seaborn==0.12.2
+
+# Jupyter for notebooks
+jupyter==1.0.0
+ipykernel==6.25.0
+
+# Utilities
+tqdm==4.66.1
+python-dotenv==1.0.0
+
+# Testing
+pytest==7.4.0
