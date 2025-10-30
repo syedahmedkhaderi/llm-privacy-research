@@ -30,8 +30,7 @@ llm-privacy-research/
 │   ├── logs/                # Experiment logs (what happened during runs)
 │   └── outputs/             # Model outputs, results files
 ├── notebooks/               # Jupyter notebooks for exploration
-├── README.md                # Project overview
-├── requirements.txt         # List of Python libraries needed
+├── README.md                # Project overview 
 └── .gitignore               # Files Git should ignore
 ```
 
@@ -72,6 +71,7 @@ pip install -r requirements.txt
 ## Advisors
 - Dr. Lamia Makhlouf
 - Dr. Karima Makhlouf
+- Dr. Sami Zhioua
 
 ## Contact
 Syed Ahmed Khaderi
