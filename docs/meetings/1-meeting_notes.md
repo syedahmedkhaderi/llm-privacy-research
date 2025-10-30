@@ -1,4 +1,4 @@
-# Meeting with [Dr. Lamia] - [ October 30, 2021]
+# Meeting with [Dr. Karima] - [ October 30, 2021]
 
 ## Attendees
 - Syed Ahmed Khaderi
