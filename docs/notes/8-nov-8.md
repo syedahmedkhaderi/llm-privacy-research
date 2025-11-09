@@ -33,6 +33,8 @@
 - feeling hopeless due to the countless errors and long wait times. 
 - will try another approach tommorow and focus just on the first command. 
 - MAybe i am missing the most obivous thing.
+- will try reading the paper tommorow 
+- and things still dont work out then ill reach out to professr
 
 ## References
 - Papers read:

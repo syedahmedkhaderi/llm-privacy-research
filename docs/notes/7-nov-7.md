@@ -1,13 +1,15 @@
 # Research Log - [7 Nov 2024]
 
 ## Time Spent
-- Total: 5 hours
+- Total: 8 hours
 
 ## What I Worked On Today
 - Revised all the theory so far. Was losing touch.
 - Created visual screenshots for plain text notes for llm notes and research paper notes
 - Learned about positional encoding in transformer models and created notes for it.
 - Tried running the tests and the first command given but failed.
+- Fixed everything i face but the problems just kept coming
+- Asked a senior "Peter" for help. He said hell let me know
 
 ## What I Learned
 - Better understanding of vector embeddings and research paper
@@ -22,6 +24,7 @@
 
 ## Solutions/Progress
 - No progress in debugging
+- Asked senior for help and found out we both were given different tasks.
 
 ## Questions for Next Meeting
 - 
