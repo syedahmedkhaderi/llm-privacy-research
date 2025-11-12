@@ -2,35 +2,23 @@
 Research project investigating privacy leakage in Large Language Models and mitigation using Privacy Enhancing Technologies.
 
 ## Project Overview
-This research explores how Large Language Models can accidentally leak sensitive training data and how Privacy Enhancing Technologies (PETs) like Differential Privacy can prevent this.
+This research explores how Large Language Models can accidentally leak sensitive training data and how Privacy Enhancing Technologies (PETs) like Differential Privacy can prevent this by running various experiments with different datasets and models.
 
-## Research Questions
-1. How do LLMs memorize and leak sensitive information?
-2. Can Privacy Enhancing Technologies effectively prevent leakage?
-3. What is the trade-off between privacy and model performance?
-
-
-## Project Structure
+## Project structure
 ```
 llm-privacy-research/
-├── data/                    # All datasets
-│   ├── raw/                 # Original, untouched data
-│   ├── processed/           # Cleaned, ready-to-use data
-│   └── synthetic/           # Fake data you generate for testing
-├── code/                    # All your Python code
-│   ├── experiments/         # Main experiment scripts
-│   ├── utils/               # Helper functions (reusable code)
-│   └── models/              # Model training/testing code
-├── docs/                    # Documentation
-│   ├── literature/          # Paper summaries, notes from reading
-│   ├── notes/               # Daily research notes
-│   └── meetings/            # Meeting notes with professors
-├── results/                 # All outputs from experiments
-│   ├── figures/             # Graphs, charts, visualizations
-│   ├── logs/                # Experiment logs (what happened during runs)
-│   └── outputs/             # Model outputs, results files
+├── docs/                    # Documentation and notes
+│   ├── meetings/            # Meeting notes
+│   └── notes/               # Daily research notes
 ├── notebooks/               # Jupyter notebooks for exploration
-├── README.md                # Project overview 
+│   └── Experiment-1.ipynb   # DEA experiment notebook (completed)
+├── plots/                   # Generated figures and visualizations
+│   ├── Task - 1/
+│   │   ├── Exposure by type/
+│   │   └── Exposure V Frequency/
+│   └── Task-2/
+├── README.md                # Project overview
+├── requirements.txt         # Python dependencies
 └── .gitignore               # Files Git should ignore
 ```
 
@@ -47,6 +35,17 @@ This research explores how Large Language Models can accidentally leak sensitive
 3. What is the trade-off between privacy and model performance?
 
 
+## Experiment 1 - DEA — Completed
+I completed the first Differential Exposure Analysis (DEA) experiment and saved the interactive notebook and generated plots in this repository. See the files below for the reproducible run and visualizations.
+
+- Notebook: `notebooks/Experiment-1.ipynb`
+- Plots: `plots/Task - 1/Exposure by type/` and `plots/Task - 1/Exposure V Frequency/`
+
+Brief summary: The initial DEA run produced exposure visualizations (exposure by type and exposure vs frequency) from the experiment data. The notebook contains the code, inputs, and steps to reproduce the figures.
+
+open `notebooks/Experiment-1.ipynb` directly in Colab by uploading the file.
+
+
 ## Setup
 ```bash
 # Clone repository
@@ -56,17 +55,7 @@ cd llm-privacy-research
 # Create virtual environment
 python -m venv venv
 source venv/bin/activate  # On Windows: venv\Scripts\activate
-
-# Install dependencies
-pip install -r requirements.txt
 ```
-
-## Progress
-- [x] Environment setup
-- [ ] Literature review
-- [ ] Baseline experiments
-- [ ] PET implementation
-- [ ] Results analysis
 
 ## Advisors
 - Dr. Lamia Makhlouf
