@@ -27,19 +27,6 @@ llm-privacy-research/
 └── .gitignore               # Files Git should ignore
 ```
 
-# Privacy Leakage in LLMs using PETs
-
-Research project investigating privacy leakage in Large Language Models and mitigation using Privacy Enhancing Technologies.
-
-## Project Overview
-This research explores how Large Language Models can accidentally leak sensitive training data and how Privacy Enhancing Technologies (PETs) like Differential Privacy can prevent this.
-
-## Research Questions
-1. How do LLMs memorize and leak sensitive information?
-2. Can Privacy Enhancing Technologies effectively prevent leakage?
-3. What is the trade-off between privacy and model performance?
-
-
 ## Experiment 1 - DEA — Completed
 I completed the first Differential Exposure Analysis (DEA) experiment and saved the interactive notebook and generated plots in this repository. See the files below for the reproducible run and visualizations.
 
