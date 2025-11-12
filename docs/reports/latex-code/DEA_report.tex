@@ -20,7 +20,7 @@
 
 % Title information
 \title{\vspace{-1cm}\textbf{Privacy Leakage Detection in LLMs Using Canary Experiments\\
-\large Detailed DEA Experiment Report}}
+\large DEA Experiment Report}}
 \author{Syed Ahmed Khaderi}
 \date{November 12, 2025}
 
@@ -61,9 +61,26 @@ where \(|R|\) is the total randomness space (1,000,000) and \(\text{rank}(\text{
 \section{Results and Observations}
 
 Two key plots summarize the experimental findings. The first plot, shown below, displays grouped exposure values by canary type and that some data types are more likely to be memorized than others. Names and phone numbers generally have higher exposure scores, indicating they are easier for the model, while emails and SSNs are less exposed.
+
+% ---- Plot 1: Exposure by Canary Type ----
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.75\textwidth]{./plots/Exposure by type/grouped_exposure_by_type.png} % replace with your file name
+\caption{Grouped exposure values by canary type}
+\label{fig:exposure_by_type}
+\end{figure}
 \\
 \\
+
 The second plot, Exposure vs. Insertion Frequency, shows how the number of times a canary is inserted into the training data affects its exposure score. As frequency increases, exposure tends to rise initially but eventually plateaus, suggesting that memorization grows with repetition only up to a point before stabilizing.
+
+% ---- Plot 2: Exposure vs Insertion Frequency ----
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.75\textwidth]{./plots/Exposure V Frequency/exposure_vs_frequency.png} % replace with your file name
+\caption{Exposure versus insertion frequency for different canaries}
+\label{fig:exposure_vs_frequency}
+\end{figure}
 
 % Note: Figures would be inserted here if available
 % \begin{figure}[H]

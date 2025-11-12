@@ -8,15 +8,20 @@ This research explores how Large Language Models can accidentally leak sensitive
 ```
 llm-privacy-research/
 ├── docs/                    # Documentation and notes
+│   ├── reports/             # Experiment Reports & Conclusion
+│   │   ├── latex-code       # Latex code of reports
 │   ├── meetings/            # Meeting notes
 │   └── notes/               # Daily research notes
+|
 ├── notebooks/               # Jupyter notebooks for exploration
 │   └── Experiment-1.ipynb   # DEA experiment notebook (completed)
+|
 ├── plots/                   # Generated figures and visualizations
 │   ├── Task - 1/
 │   │   ├── Exposure by type/
 │   │   └── Exposure V Frequency/
 │   └── Task-2/
+|
 ├── README.md                # Project overview
 ├── requirements.txt         # Python dependencies
 └── .gitignore               # Files Git should ignore
