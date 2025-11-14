@@ -50,7 +50,7 @@ source venv/bin/activate  # On Windows: venv\Scripts\activate
 ```
 
 ## Advisors
-- Dr. Lamia Makhlouf
+- Dr. Lamiaa Basyoni
 - Dr. Karima Makhlouf
 - Dr. Sami Zhioua
 
