@@ -9,18 +9,23 @@ This research explores how Large Language Models can accidentally leak sensitive
 llm-privacy-research/
 ├── docs/                    # Documentation and notes
 │   ├── reports/             # Experiment Reports & Conclusion
-│   │   ├── latex-code       # Latex code of reports
+│   │   ├── DEA_Report_Latex.pdf
+│   │   ├── RAG_Report_Latex.pdf
+│   │   └── latex-code       # Latex code of reports
 │   ├── meetings/            # Meeting notes
 │   └── notes/               # Daily research notes
 |
 ├── notebooks/               # Jupyter notebooks for exploration
-│   └── Experiment-1.ipynb   # DEA experiment notebook (completed)
+│   ├── Experiment-1.ipynb   # DEA experiment notebook (completed)
+│   └── Experiment-2-RAG/    # RAG experiment notebooks
 |
 ├── plots/                   # Generated figures and visualizations
 │   ├── Task - 1/
 │   │   ├── Exposure by type/
 │   │   └── Exposure V Frequency/
 │   └── Task-2/
+│       ├── 100-num-samples-plot.png
+│       └── 1000-num-samples-plots.png
 |
 ├── README.md                # Project overview
 ├── requirements.txt         # Python dependencies
@@ -36,6 +41,14 @@ I completed the first Differential Exposure Analysis (DEA) experiment and saved 
 Brief summary: The initial DEA run produced exposure visualizations (exposure by type and exposure vs frequency) from the experiment data. The notebook contains the code, inputs, and steps to reproduce the figures.
 
 open `notebooks/Experiment-1.ipynb` directly in Colab by uploading the file.
+
+## Experiment 2 - RAG — Completed
+I completed the second experiment focusing on integrating Retrieval-Augmented Generation (RAG) into the current pipeline and saved the notebooks and plots in this repository. See the files below for the reproducible run.
+
+- Notebooks: `notebooks/Experiment-2-RAG/`
+- Plots: `plots/Task-2/`
+
+Brief summary: This experiment investigates privacy leakage in when RAG systems are used. The notebooks contain the code, inputs, and steps to reproduce the results.
 
 
 ## Setup
