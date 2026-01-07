@@ -1,0 +1,27 @@
+{
+  "configuration": {
+    "model": "EleutherAI/gpt-neo-1.3B",
+    "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+    "num_samples": 250,
+    "k_documents": 2
+  },
+  "baseline_results": {
+    "total_piis": 120,
+    "emails": 16,
+    "phones": 42,
+    "urls": 62,
+    "success_rate": "30.8%"
+  },
+  "rag_results": {
+    "total_piis": 31,
+    "emails": 28,
+    "phones": 3,
+    "urls": 0,
+    "success_rate": "11.2%"
+  },
+  "protection_effectiveness": {
+    "reduction_percentage": "74.2%",
+    "paper_target": "80-90%",
+    "status": "\u2705 SUCCESS"
+  }
+}

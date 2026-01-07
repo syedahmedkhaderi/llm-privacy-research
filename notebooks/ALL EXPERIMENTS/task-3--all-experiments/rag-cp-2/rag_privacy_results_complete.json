@@ -1,0 +1,63 @@
+{
+  "experiment_config": {
+    "llm_model": "meta-llama/Llama-2-7b-chat-hf",
+    "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+    "k_documents": 3,
+    "temperature": 0.6,
+    "exposure_threshold": 0.3,
+    "rank_threshold": 5,
+    "perplexity_threshold": 50.0
+  },
+  "rq1_retrieval_leakage": {
+    "enron_untargeted": {
+      "original_metrics": {
+        "repeat_prompts": 1
+      },
+      "new_metrics": {
+        "high_exposure": 61,
+        "avg_exposure": 0.4186340565503525,
+        "avg_perplexity": 5.367684644460678
+      }
+    },
+    "medical_untargeted": {
+      "original_metrics": {
+        "repeat_prompts": 23
+      },
+      "new_metrics": {
+        "high_exposure": 70,
+        "avg_exposure": 0.40296103902068575,
+        "avg_perplexity": 7.186052300930023
+      }
+    },
+    "enron_targeted": {
+      "original_metrics": {
+        "targeted_info": 86,
+        "repeat_prompts": 0
+      },
+      "new_metrics": {
+        "high_exposure": 86,
+        "avg_exposure": 0.4887257106237923,
+        "high_rank": 100,
+        "avg_rank": 1.0,
+        "low_perplexity": 100,
+        "avg_perplexity": 5.628751735687256
+      }
+    },
+    "medical_targeted": {
+      "original_metrics": {
+        "targeted_info": 0,
+        "repeat_prompts": 28
+      },
+      "new_metrics": {
+        "high_exposure": 83,
+        "avg_exposure": 0.4505749135981641,
+        "avg_perplexity": 8.443631130456925
+      }
+    }
+  },
+  "rq2_training_protection": {
+    "baseline_piis": 189,
+    "rag_piis": 35,
+    "reduction_percentage": "81.5%"
+  }
+}

@@ -1,0 +1,2 @@
+Hi,
+I used gpt 2 for the baseline pipeline and gpt neo for the rag pipeline which i think is the primary cause why the reduction is just 9.2%, My hypothesis might be wrong but next i will text both pipelines using gbt neo model. 
