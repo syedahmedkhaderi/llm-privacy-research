@@ -1,0 +1,114 @@
+\documentclass[12pt,a4paper]{article}
+
+% Packages
+\usepackage[top=1cm]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{geometry}
+\usepackage{hyperref}
+\usepackage{booktabs}
+\usepackage{float}
+
+% Page layout
+\geometry{margin=1in}
+
+% Reduce top margin in geometry
+\usepackage[top=0.6cm,bottom=1.4cm,left=1.5cm,right=1.5cm]{geometry}
+
+% Title information
+\title{\vspace{-1cm}\textbf{Privacy Leakage Detection in LLMs Using Canary Experiments\\
+\large DEA Experiment Report}}
+\author{Syed Ahmed Khaderi}
+\date{November 12, 2025}
+
+\begin{document}
+
+\maketitle
+
+
+
+\section{Objective}
+
+This experiment investigates how large language models (LLMs) like GPT-2 can memorize and leak sensitive data. Artificial canary were inserted into the training data to test whether the model could later reproduce them, simulating a Data Extraction Attack (DEA). The study examines how the type and frequency of personal information (e.g., names, emails, phone numbers, SSNs) affect exposure risk, helping assess which data are most likely to be memorized.
+
+\section{Experimental Setup and Configuration}
+
+The experiment fine-tuned a GPT-2 (124M parameter) model on the WikiText-2 dataset without applying any differential privacy methods, to observe natural memorization. Four synthetic canary types—names, emails, phone numbers, and SSNs were created, each with 10 examples inserted into the data at frequencies of 1, 5, 10, 50, and 100 times.
+\\
+\\
+Model memorization was calculated using exposure, a score indicating how easily a canary could be recalled. Higher exposure means greater memorization risk. The formula used for computing:
+
+\begin{equation}
+\text{Exposure} = \log(|R|) - \log(\text{rank}(\text{canary}))
+\end{equation}
+\\
+where \(|R|\) is the total randomness space (1,000,000) and \(\text{rank}(\text{canary})\) is the position of the canary when sorted by model perplexity. All experiments were run on Google Colab using a Tesla T4 GPU with Python 3.12 and PyTorch 2.1.0.
+
+\section{Procedure}
+
+\begin{enumerate}\setlength{\itemsep}{1pt}
+\item Setup the local environment in colab and cloned the repositories. 
+\item Customized the config file to use GPT-2 with WikiText-2 as dataset. 
+\item Created a simple canary-experiment.py file containing due to the main file being bugged.
+\item Ran experiments for different insertion frequencies for various canaries.
+\item Computed exposure scores for each canary using the log-based formula.
+\item Plotted results to visualize exposure by data type and frequency.
+\end{enumerate}
+
+\section{Results and Observations}
+
+Two key plots summarize the experimental findings. The first plot, shown below, displays grouped exposure values by canary type and that some data types are more likely to be memorized than others. Names and phone numbers generally have higher exposure scores, indicating they are easier for the model, while emails and SSNs are less exposed.
+
+% ---- Plot 1: Exposure by Canary Type ----
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.75\textwidth]{./plots/Exposure by type/grouped_exposure_by_type.png} % replace with your file name
+\caption{Grouped exposure values by canary type}
+\label{fig:exposure_by_type}
+\end{figure}
+\\
+\\
+
+The second plot, Exposure vs. Insertion Frequency, shows how the number of times a canary is inserted into the training data affects its exposure score. As frequency increases, exposure tends to rise initially but eventually plateaus, suggesting that memorization grows with repetition only up to a point before stabilizing.
+
+% ---- Plot 2: Exposure vs Insertion Frequency ----
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.75\textwidth]{./plots/Exposure V Frequency/exposure_vs_frequency.png} % replace with your file name
+\caption{Exposure versus insertion frequency for different canaries}
+\label{fig:exposure_vs_frequency}
+\end{figure}
+
+% Note: Figures would be inserted here if available
+% \begin{figure}[H]
+% \centering
+% \includegraphics[width=0.8\textwidth]{figure1.png}
+% \caption{Grouped exposure values by canary type}
+% \label{fig:exposure_by_type}
+% \end{figure}
+
+% \begin{figure}[H]
+% \centering
+% \includegraphics[width=0.8\textwidth]{figure2.png}
+% \caption{Exposure vs. Insertion Frequency}
+% \label{fig:exposure_vs_frequency}
+% \end{figure}
+
+\section{Errors Identified with canary-experiment.py}
+
+\begin{enumerate}
+\item "with open(os.path.join("/home/data/hlibt/tosave/P-bench-0529..." - Import issue path
+\item Missing default-canary.json File  The code tries to load default-canary.json but this file doesn't exist in the repository. However, dataset/prepare-canary.py can generate it
+\item Incorrect Function Import - "from utils import calculate-perplexity-for-gpt, calculate-exposures, calculate-perplexity-for-t5"
+\item Path Configuration Issues - Multiple hardcoded paths like BASE-DIR = "privacy-benchmark-main" need to be fixed.
+\item Seed number commented out. "SEED-NUMBER = 42"
+\end{enumerate}
+
+\section{Conclusion}
+
+This experiment demonstrated that LLMs like GPT-2 are capable of memorizing and reproducing sensitive data under certain conditions. All four data types showed some level of exposure, confirming that no category is fully immune to extraction. Names and phone numbers remain the most at risk due to their integration into natural text, while SSNs and emails, though less exposed, still pose privacy concerns. 
+
+\end{document}
