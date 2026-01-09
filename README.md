@@ -7,6 +7,7 @@ This research explores how Large Language Models can accidentally leak sensitive
 ## Project structure
 ```
 llm-privacy-research/
+├── research_papers/
 ├── docs/                    # Documentation and notes
 │   ├── reports/             # Experiment Reports & Conclusion
 │   │   ├── DEA_Report_Latex.pdf
