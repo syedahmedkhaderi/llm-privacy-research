@@ -22,8 +22,8 @@ llm-privacy-research/
 ## Experiment 1 - DEA — Completed
 I completed the first Differential Exposure Analysis (DEA) experiment and saved the interactive notebook and generated plots in this repository. See the files below for the reproducible run and visualizations.
 
-- Notebook: `notebooks/Experiment-1.ipynb`
-- Plots: `plots/Task - 1/Exposure by type/` and `plots/Task - 1/Exposure V Frequency/`
+- Notebook: `notebooks/01-task-1-baseline/`
+- Plots: `plots/Task-1/`
 
 Brief summary: The initial DEA run produced exposure visualizations (exposure by type and exposure vs frequency) from the experiment data. The notebook contains the code, inputs, and steps to reproduce the figures.
 
@@ -32,10 +32,19 @@ open `notebooks/Experiment-1.ipynb` directly in Colab by uploading the file.
 ## Experiment 2 - RAG — Completed
 I completed the second experiment focusing on integrating Retrieval-Augmented Generation (RAG) into the current pipeline and saved the notebooks and plots in this repository. See the files below for the reproducible run.
 
-- Notebooks: `notebooks/Experiment-2-RAG/`
+- Notebooks: `notebooks/02-task-2-RAG/`
 - Plots: `plots/Task-2/`
 
 Brief summary: This experiment investigates privacy leakage in when RAG systems are used. The notebooks contain the code, inputs, and steps to reproduce the results.
+
+## Experiment 3 - RAG vs Baseline LLM Comparison on Data Extraction Attacks
+I completed the third experiment focusing on evaluating the impact of Retrieval-Augmented Generation (RAG) into the current pipeline on Data Extraction Attacks. See the files below for the reproducible run. This experiment is improvement of experiment 2 with more detailed design and evaluation metrics. I had to run 30+ runs to achieve the desired accuracy and results
+
+- Notebooks: `notebooks/03-task-3-comparison/`
+- Plots: `plots/Task-3/`
+- 30+ Runs: `notebooks/ALL EXPERIMENTS/experiment-3-runs/`
+
+Brief summary: This experiment investigates the effects and reduction of data extraction on training data when RAG is implemented. The notebooks contain the code, inputs, and steps to reproduce the results.
 
 
 ## Setup
