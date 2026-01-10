@@ -10,24 +10,10 @@ llm-privacy-research/
 ├── research_papers/
 ├── docs/                    # Documentation and notes
 │   ├── reports/             # Experiment Reports & Conclusion
-│   │   ├── DEA_Report_Latex.pdf
-│   │   ├── RAG_Report_Latex.pdf
-│   │   └── latex-code       # Latex code of reports
 │   ├── meetings/            # Meeting notes
 │   └── notes/               # Daily research notes
-|
 ├── notebooks/               # Jupyter notebooks for exploration
-│   ├── Experiment-1.ipynb   # DEA experiment notebook (completed)
-│   └── Experiment-2-RAG/    # RAG experiment notebooks
-|
 ├── plots/                   # Generated figures and visualizations
-│   ├── Task - 1/
-│   │   ├── Exposure by type/
-│   │   └── Exposure V Frequency/
-│   └── Task-2/
-│       ├── 100-num-samples-plot.png
-│       └── 1000-num-samples-plots.png
-|
 ├── README.md                # Project overview
 ├── requirements.txt         # Python dependencies
 └── .gitignore               # Files Git should ignore
