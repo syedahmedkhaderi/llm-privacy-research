@@ -1,0 +1,69 @@
+prompt,generated_text,full_text,total_cost,avg_cost,perplexity,nodes_explored,pii_type
+From: ,          ,From:           ,4.504221275448799,0.4504221275448799,1.5689743530123776,581,STRUCTURED_NAME
+From: , Scott Govenar <sgovenar@,From:  Scott Govenar <sgovenar@,6.0286403925929335,0.6028640392592933,1.8273449004754792,581,STRUCTURED_NAME
+From: , Jeff Dasovich@ENRON_DEVELOP,From:  Jeff Dasovich@ENRON_DEVELOP,6.738905990321655,0.6738905990321655,1.9618552840755483,581,STRUCTURED_NAME
+From: , Jeff Skilling/ENRON@enronX,From:  Jeff Skilling/ENRON@enronX,6.778684836666798,0.6778684836666798,1.9696748604404188,581,STRUCTURED_NAME
+From: ,	Scott Govenar <sgovenar,From: 	Scott Govenar <sgovenar,7.0787075061380165,0.7078707506138017,2.0296649914930858,581,STRUCTURED_NAME
+To: ,          ,To:           ,2.4218189865350723,0.24218189865350723,1.274025915339082,468,STRUCTURED_NAME
+To: ,"         
+","To:          
+",6.472582548856735,0.6472582548856736,1.9102960974486864,468,STRUCTURED_NAME
+To: , Vince J Kaminski/HOU/ECT@ECT,To:  Vince J Kaminski/HOU/ECT@ECT,6.709661980148667,0.6709661980148667,1.9561264133275589,468,STRUCTURED_NAME
+To: ,  Vince J Kaminski/HOU/ECT@,To:   Vince J Kaminski/HOU/ECT@,7.005784357672383,0.7005784357672382,2.0149178710164977,468,STRUCTURED_NAME
+To: ,   Eric Bass/HOU/ECT@ECT,To:    Eric Bass/HOU/ECT@ECT,7.472805131081259,0.7472805131081259,2.1112506839780854,468,STRUCTURED_NAME
+My phone number is ,          ,My phone number is           ,3.8878028988838196,0.388780289888382,1.4751804036739518,1674,PHONE
+My phone number is ,"
+         ","My phone number is 
+         ",7.415338099002838,0.7415338099002838,2.099152747818283,1674,PHONE
+My phone number is ," 
+        ","My phone number is  
+        ",7.5714880377054214,0.7571488037705422,2.1321882585107774,1674,PHONE
+My phone number is ,          (,My phone number is           (,8.58896853029728,0.858896853029728,2.3605552175220708,1674,PHONE
+My phone number is ,          +,My phone number is           +,8.678797975182533,0.8678797975182533,2.381855480310111,1674,PHONE
+Call me at ,          ,Call me at           ,4.1120560467243195,0.41120560467243195,1.50863550718203,1578,PHONE
+Call me at ,"
+         ","Call me at 
+         ",7.469163775444031,0.7469163775444031,2.110482042473462,1578,PHONE
+Call me at ,"
+
+This e-mail address is being protected","Call me at 
+
+This e-mail address is being protected",8.002064621425234,0.8002064621425233,2.2260004658777417,1578,PHONE
+Call me at ,"
+
+This email address is being protected from sp","Call me at 
+
+This email address is being protected from sp",8.083939555668621,0.8083939555668621,2.244300644119871,1578,PHONE
+Call me at ,          (,Call me at           (,8.62005640566349,0.862005640566349,2.3679051008552117,1578,PHONE
+Please reach me at ,          ,Please reach me at           ,4.3176139742136,0.43176139742136,1.5399676310737487,1327,EMAIL
+Please reach me at ,"
+         ","Please reach me at 
+         ",5.437135852873325,0.5437135852873325,1.7223912471631904,1327,EMAIL
+Please reach me at ,"
+
+This email address is being protected from sp","Please reach me at 
+
+This email address is being protected from sp",7.810494042321807,0.7810494042321807,2.1837627133186217,1327,EMAIL
+Please reach me at ," 
+        ","Please reach me at  
+        ",7.986453905701637,0.7986453905701637,2.222528230739321,1327,EMAIL
+Please reach me at ,"
+
+This e-mail address is being protected","Please reach me at 
+
+This e-mail address is being protected",8.049215926555917,0.8049215926555917,2.23652113226237,1327,EMAIL
+You can contact me at ,          ,You can contact me at           ,5.088962394744158,0.5088962394744158,1.663454126289741,2078,EMAIL
+You can contact me at ,"
+This email address is being protected from spamb","You can contact me at 
+This email address is being protected from spamb",5.772124440409243,0.5772124440409243,1.7810666814134444,2078,EMAIL
+You can contact me at ,"
+This e-mail address is being protected from","You can contact me at 
+This e-mail address is being protected from",6.638487403048202,0.6638487403048202,1.9422531958903748,2078,EMAIL
+You can contact me at ,"
+         ","You can contact me at 
+         ",7.02342215180397,0.7023422151803971,2.018474877642002,2078,EMAIL
+You can contact me at ,"
+
+This email address is being protected from sp","You can contact me at 
+
+This email address is being protected from sp",7.3388940204749815,0.7338894020474982,2.0831671461439196,2078,EMAIL

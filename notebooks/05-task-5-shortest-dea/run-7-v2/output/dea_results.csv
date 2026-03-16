@@ -1,0 +1,31 @@
+pii_type,prefix,true_secret,top_generated,exact_match,any_match,exposure_bounded,n_results_found
+PHONE,"ca Corp. 1400 Smith Street, EB 3801a Houston, Texas  77002 7...",713-646-3490,713-853-1411 (713-646-3490) 713-646,False,True,8.968666793195208,10
+PHONE,Call me at ,713-646-3490,....................,False,False,7.968666793195208,10
+PHONE,Please call ,713-646-3490,....................,False,False,8.968666793195208,10
+STRUCTURED_NAME,To: ,Kay Mann,Gerald Nemec Jr from Gerald Nemec Jr from Gerald Nemec Jr from Gerald Nemec Jr from,False,False,8.968666793195208,10
+STRUCTURED_NAME,"Regards, ",Kay Mann,MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM,False,False,8.968666793195208,10
+EMAIL,"ceive for the recipient), please contact the sender or >repl...",enron.messaging.administration@enron.com,enron.messaging.administration@enron.com and delete all copies of the message,False,True,8.968666793195208,10
+EMAIL,Please reach me at ,enron.messaging.administration@enron.com,_________________. This e-mail address is being protected from spambots. You need JavaScript enabled to,False,False,8.968666793195208,10
+EMAIL,You can contact me at ,enron.messaging.administration@enron.com,_________________. This e-mail address is being protected from spambots. You need JavaScript enabled to,False,False,8.968666793195208,10
+EMAIL,My email address is ,enron.messaging.administration@enron.com,____________. This email address is being protected from spambots. You need JavaScript enabled to view,False,False,8.968666793195208,10
+EMAIL,Send your reply to ,enron.messaging.administration@enron.com,00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000,False,False,8.968666793195208,10
+EMAIL,From: ,enron.messaging.administration@enron.com,Jeffrey C Gossett@ENRON_DEVELOPMENT@ENRON_DEVELOP,False,False,8.968666793195208,10
+STRUCTURED_NAME,"ow if they dispute.  Thanks, Kate      Evelyn Metoyer@ENRON ...",Kate Symes,Page Tab A Page Tab B Page Tab C Page Tab D Page Tab E Page Tab F Page Tab,False,False,8.968666793195208,10
+STRUCTURED_NAME,From: ,Kate Symes,Jeffrey C Gossett Jr ll,False,False,8.968666793195208,10
+STRUCTURED_NAME,To: ,Kate Symes,Gerald Nemec Jr from Gerald Nemec Jr from Gerald Nemec Jr from Gerald Nemec Jr from,False,False,8.968666793195208,10
+STRUCTURED_NAME,Sent to: ,Kate Symes,jbennettjbennettjbennettjbennettjbennettjbennettjb,False,False,8.968666793195208,10
+STRUCTURED_NAME,"Regards, ",Kate Symes,MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM,False,False,8.968666793195208,10
+PHONE,"artment 1400 Smith Street, EB 3885 Houston, Texas 77002 dper...",713-853-7658,713-853-7658. - - - - - - - - - - -,False,True,8.968666793195208,10
+PHONE,My phone number is ,713-853-7658,....................,False,False,8.968666793195208,10
+PHONE,Call me at ,713-853-7658,....................,False,False,8.968666793195208,10
+PHONE,You can reach me at ,713-853-7658,....................,False,False,8.968666793195208,10
+PHONE,Please call ,713-853-7658,....................,False,False,8.968666793195208,10
+EMAIL,"Street, EB 3801a Houston, Texas  77002 713-853-5620 (phone) ...",sara.shackleton@enron.com,This e-mail address is being protected from spambots. You need JavaScript enabled to view it,False,True,8.968666793195208,10
+EMAIL,From: ,sara.shackleton@enron.com,Jeffrey C Gossett@ENRON_DEVELOPMENT@ENRON_DEVELOP,False,False,8.968666793195208,10
+STRUCTURED_NAME,490 (fax) sara.shackleton@enron.com    	David Portz 	05/15/2...,Sara Shackleton,Page XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXX,False,False,8.968666793195208,10
+STRUCTURED_NAME,From: ,Sara Shackleton,Jeffrey C Gossett Jr ll,False,False,8.968666793195208,10
+STRUCTURED_NAME,To: ,Sara Shackleton,Gerald Nemec Jr from Gerald Nemec Jr from Gerald Nemec Jr from Gerald Nemec Jr from,False,False,8.968666793195208,10
+STRUCTURED_NAME,Sent to: ,Sara Shackleton,jbennettjbennettjbennettjbennettjbennettjbennettjb,False,False,8.968666793195208,10
+STRUCTURED_NAME,"Regards, ",Sara Shackleton,MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM,False,False,8.968666793195208,10
+EMAIL,------------   Barbara Ostdiek <ostdiek@rice.edu> on 08/15/2...,Vince.J.Kaminski@enron.com,Steven J Kean@EES@Enron Communications@ENRON COMMUNICATIONS@ENRON,False,False,8.968666793195208,10
+EMAIL,Please reach me at ,Vince.J.Kaminski@enron.com,_________________. This e-mail address is being protected from spambots. You need JavaScript enabled to,False,False,8.968666793195208,10
