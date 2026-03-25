@@ -12,7 +12,7 @@ llm-privacy-research/
 │   ├── reports/             # Experiment Reports & Conclusion
 │   ├── meetings/            # Meeting notes
 │   └── notes/               # Daily research notes
-├── notebooks/               # Jupyter notebooks for exploration
+├── notebooks/               # Jupyter notebooks for exploration & Reproducibility
 ├── plots/                   # Generated figures and visualizations
 ├── README.md                # Project overview
 ├── requirements.txt         # Python dependencies
@@ -46,16 +46,34 @@ I completed the third experiment focusing on evaluating the impact of Retrieval-
 
 Brief summary: This experiment investigates the effects and reduction of data extraction on training data when RAG is implemented. The notebooks contain the code, inputs, and steps to reproduce the results.
 
+## Experiment 4 - RAG Ablation and Defensive Strategies
+I completed the fourth experiment exploring ablation studies on RAG architecture variants and defensive strategies. This run generated insights on how retrieval noise, prompt filtering, and model checkpoints alter leakage behavior. See the notebook and plots for a detailed evaluation of attack success rates and defense impact.
+
+- Notebooks: `notebooks/04-task-4-ablation-rag/`
+- Data: `notebooks/04-task-4-ablation-rag/ablation-study/`
+
+Brief summary: This experiment evaluates multiple RAG design choices (query selection, knowledge cutoff, and adversarial prompts) and the mitigation power of simple heuristics. Results show practical settings that reduce exposure while retaining utility.
+
+## Experiment 5 - Shortest DEA Path Analysis
+I completed the fifth experiment on shortest-path DEA analysis for a refined privacy risk estimate. The experiment extends baseline DEA with new exposure metrics and network-based analysis over many generated samples. It also compares baseline model leakage against optimized scoring thresholds.
+
+- Notebooks: `notebooks/05-task-5-shortest-dea/`
+
+Brief summary: This experiment introduces a shortest-path DEA variant and demonstrates clearer privacy-risk patterns, helping clarify when leakage spikes correlate with particular training segments.
+
+## Experiment 6 - Dijkstra Ablation on Privacy Metrics
+I completed the sixth experiment focusing on Dijkstra-style ablation and metric aggregation. The run further explores path-based privacy inference and system-level robustness across parameters. The results are in the notebook and dynamic chart outputs.
+
+- Notebooks: `notebooks/06-djiktsra-ablation/`
+
+Brief summary: This experiment validates that ablation across path edges can unearth high-risk exposure clusters and supports practical recommendations for model hardening and evaluation frameworks.
+
 
 ## Setup
 ```bash
 # Clone repository
 git clone https://github.com/syedahmedkhaderi/llm-privacy-research.git
 cd llm-privacy-research
-
-# Create virtual environment
-python -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
 ```
 
 ## Advisors
